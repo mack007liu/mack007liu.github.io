@@ -1,0 +1,6 @@
+
+● 首先 Client 提交 Yarn App，比如 JobGraph 或者 JARs。
+● 接下来 Yarn 的 ResourceManager 会申请第一个 Container。这个
+Container 通过 Application Master 启动进程，Application Master 里面运行的是 Flink 程序，即 Flink-Yarn ResourceManager 和 JobManager。
+● 最后 Flink-Yarn ResourceManager 向 Yarn ResourceManager 申请资
+源。当分配到资源后，启动 TaskManager。TaskManager 启动后向 Flink-Yarn ResourceManager 进行注册，注册成功后 JobManager 就会分配具体的任务给 TaskManager 开始执行。

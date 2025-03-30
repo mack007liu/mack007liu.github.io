@@ -1,0 +1,10 @@
+title: Mack Liu's Blog
+description: Welcome to my personal blog and portfolio
+theme: jekyll-theme-minimal
+baseurl: ""
+url: "https://mack007liu.github.io"
+github_username: mack007liu
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag 
